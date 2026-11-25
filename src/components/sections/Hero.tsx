@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-cyan-400/5 blur-3xl" />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 px-6 py-24 md:grid-cols-[1.05fr_0.95fr] md:items-center">
-        {/* Kolom teks */}
+        {/* Text column */}
         <div>
           <p className="mb-3 text-sm font-medium text-amber-400/90">
             {profile.greeting}
@@ -51,14 +51,23 @@ export default function Hero() {
               href="#projects"
               className="rounded-lg bg-amber-400 px-6 py-3 text-sm font-semibold text-[#0b0d12] transition hover:bg-amber-300"
             >
-              Lihat Proyek
+              View Projects
             </a>
             <a
               href="#contact"
               className="rounded-lg border border-[#2a3040] px-6 py-3 text-sm font-semibold text-[#eef1f6] transition hover:border-amber-400/50"
             >
-              Hubungi Saya
+              Get in Touch
             </a>
+            {profile.cv && (
+              <a
+                href={profile.cv}
+                download
+                className="rounded-lg border border-[#2a3040] px-6 py-3 text-sm font-semibold text-[#eef1f6] transition hover:border-amber-400/50"
+              >
+                Download CV
+              </a>
+            )}
           </div>
 
           <div className="mt-8 flex gap-3">
@@ -90,7 +99,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Kolom foto bulat + kartu identitas menimpa */}
+        {/* Round photo with overlapping identity card */}
         <div className="relative mx-auto flex w-full max-w-sm items-center justify-center pb-16">
           <div className="absolute h-80 w-80 rounded-full bg-gradient-to-br from-amber-400/20 via-amber-500/10 to-cyan-400/15 blur-2xl" />
 

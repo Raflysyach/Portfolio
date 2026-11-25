@@ -13,23 +13,17 @@ const LinkedinIcon = () => (
   </svg>
 );
 
-const InstagramIcon = () => (
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-    <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 3.9a5.94 5.94 0 1 0 0 11.88 5.94 5.94 0 0 0 0-11.88Zm0 9.8a3.86 3.86 0 1 1 0-7.72 3.86 3.86 0 0 1 0 7.72Zm6.4-10.03a1.39 1.39 0 1 1-2.77 0 1.39 1.39 0 0 1 2.77 0Z" />
-  </svg>
-);
-
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#0b0d12] px-6 py-16 text-[#eef1f6]">
       <div className="mx-auto max-w-2xl text-center">
         <p className="mb-2 text-sm font-medium text-amber-400/90">Contact</p>
         <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-          Let's Build Something Together
+          Let's Connect
         </h2>
         <p className="mb-10 text-sm text-[#a3a9ba]">
-          Have an idea, project, opportunity, or just want to connect? Feel
-          free to reach out.
+          I'm open to internship opportunities, including software testing and
+          QA roles. Feel free to reach out.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -60,15 +54,6 @@ export default function Contact() {
             aria-label="LinkedIn"
           >
             <LinkedinIcon />
-          </a>
-          <a
-            href={profile.socials.instagram}
-            target="_blank"
-            rel="noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#242a38] text-[#a3a9ba] transition hover:border-amber-400/50 hover:text-amber-400"
-            aria-label="Instagram"
-          >
-            <InstagramIcon />
           </a>
         </div>
       </div>

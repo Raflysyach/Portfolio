@@ -1,9 +1,20 @@
 export const skills = {
-  core: [
-    { name: "HTML5", level: "Frontend" },
-    { name: "React", level: "Frontend" },
-    { name: "CSS", level: "Frontend" },
+  qa: ["Manual Testing", "Functional Testing", "UI & Responsive Testing"],
+  dev: [
+    "HTML5",
+    "CSS",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "NestJS",
+    "MySQL",
   ],
-  learning: ["TypeScript", "Tailwind CSS", "Java", "C++"],
-  tools: ["Git", "GitHub", "VS Code"],
+  learning: [
+    "Test Case Writing",
+    "Bug Reporting",
+    "API Testing (Postman)",
+    "Java",
+    "C++",
+  ],
+  tools: ["Git", "GitHub", "VS Code", "WordPress", "cPanel"],
 };

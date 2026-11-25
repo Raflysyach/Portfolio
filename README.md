@@ -1,75 +1,44 @@
-# React + TypeScript + Vite
+# Raflysyach Kurniawan | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of a Computer Science student at BINUS University, focused on frontend development and curious about software testing.
 
-Currently, two official plugins are available:
+**Live site:** https://raflysyach-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sections
 
-## React Compiler
+- **Home**: introduction, tech stack, and links
+- **About**: background and how I work
+- **Skills**: development, testing, and tools
+- **Journey**: education
+- **Projects**: PlanIt and Garuda Darma Ekapratama, each with a note on how it was tested
+- **Contact**: email, GitHub, and LinkedIn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+React 19, TypeScript, Vite, Tailwind CSS 4, Framer Motion, Lucide React. Deployed on Vercel.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # type-check and build for production
+npm run lint     # run ESLint
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Updating the Content
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+All text lives in `src/data/`:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| File | Content |
+| --- | --- |
+| `profile.ts` | name, role, summary, social links, CV path |
+| `skills.ts` | skill groups |
+| `projects.ts` | projects, links, and testing focus |
+| `education.ts` | education timeline |
 
-```
+To show the **Download CV** button, place the PDF in `public/` and set `cv` in `profile.ts`.
+
+## Testing Documentation
+
+Test cases and a bug report template for my projects are in [`docs/testing`](./docs/testing).
